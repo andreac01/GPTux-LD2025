@@ -161,7 +161,8 @@
         <p>Corso Linux Day 2025 &mdash; Costruisci ed esplora un piccolo Transformer.</p>
         <nav>
             <a href="https://github.com/andreac01/GPTux-LD2025" target="_blank" rel="noopener">GitHub Repo</a>
-            <a href="GPTux.html">Notebook in html</a>
+            <a href="GPTux.html">Apri Notebook</a>
+            <a href="GPTux.ipynb" download>Scarica Notebook</a>
             <a href="presentazione.pdf" download>Scarica Presentazione</a>
         </nav>
     </header>
@@ -192,14 +193,13 @@
 sudo apt install python3 python3-venv python3-pip</pre>
                 </li>
                 <li>Crea ambiente virtuale:<br>
-                    <pre>cd ~
-python3 -m venv .venv/gptux-env
+                    <pre>python3 -m venv ~/.venv/gptux-env
 source ~/.venv/gptux-env/bin/activate</pre>
                 </li>
                 <li>Installa pacchetti:<br>
-                    <pre>pip install --upgrade pip
+                    <pre>cd ./GPTux-LD2025
 pip install -r requirements.txt
-pip install jupyter</pre>
+pip install jupyterlab</pre>
                 </li>
                 <li>Avvia Jupyter Notebook:<br>
                     <pre>jupyter notebook</pre>
