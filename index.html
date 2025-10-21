@@ -160,10 +160,9 @@
         <h1>Crea il tuo GPTux</h1>
         <p>Corso Linux Day 2025 &mdash; Costruisci ed esplora un piccolo Transformer.</p>
         <nav>
-            <a href="https://github.com/POuL/LinuxDay2025" target="_blank" rel="noopener">GitHub Repo</a>
-            <a href="GPTux.ipynb" download>Scarica Notebook</a>
-            <a href="requirements.txt" download>Scarica Requirements</a>
-            <a href="presentazione.html">Presentazione</a>
+            <a href="https://github.com/andreac01/GPTux-LD2025" target="_blank" rel="noopener">GitHub Repo</a>
+            <a href="GPTux.html">Notebook in html</a>
+            <a href="presentazione.pdf" download>Scarica Presentazione</a>
         </nav>
     </header>
     <main>
@@ -185,13 +184,17 @@
         <section>
             <h2>Setup rapido su Linux (Facoltativo)</h2>
             <ol>
+                <li>Clona la repository:<br>
+                    <pre>git clone https://github.com/andreac01/GPTux-LD2025.git</pre>
+                </li>
                 <li>Installa Python (consigliato 3.11+):<br>
                     <pre>sudo apt update
 sudo apt install python3 python3-venv python3-pip</pre>
                 </li>
                 <li>Crea ambiente virtuale:<br>
-                    <pre>python3 -m venv gptux-env
-source gptux-env/bin/activate</pre>
+                    <pre>cd ~
+python3 -m venv .venv/gptux-env
+source ~/.venv/gptux-env/bin/activate</pre>
                 </li>
                 <li>Installa pacchetti:<br>
                     <pre>pip install --upgrade pip
@@ -202,12 +205,6 @@ pip install jupyter</pre>
                     <pre>jupyter notebook</pre>
                 </li>
             </ol>
-            <div class="download-links">
-                <a href="requirements.txt" download>Scarica requirements.txt</a>
-                <a href="GPTux.ipynb" download>Scarica Notebook</a>
-                <a href="presentazione.html">Presentazione</a>
-                <a href="https://github.com/POuL/LinuxDay2025" target="_blank" rel="noopener">GitHub Repo</a>
-            </div>
             <p>
                 <b>Risorse utili:</b>
                 <ul>
@@ -219,7 +216,7 @@ pip install jupyter</pre>
             <p>
                 <b>Alternative Cloud:</b>
                 <ul>
-                    <li>Puoi usare il notebook su <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colab</a> o <a href="https://www.kaggle.com/code" target="_blank" rel="noopener">Kaggle Notebooks</a>.<br>
+                    <li>Puoi usare il notebook su <a href="https://www.kaggle.com/code" target="_blank" rel="noopener">Kaggle Notebooks</a> o <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colab</a>.<br>
 
                 </ul>
             </p>
@@ -227,7 +224,7 @@ pip install jupyter</pre>
         <section>
             <h2>Note finali</h2>
             <ul>
-                <li>Materiale didattico e modificabile, esplorabile liberamente.</li>
+                <li>Il materiale è modificabile ed esplorabile liberamente.</li>
                 <li>Notebook auto-contenuto: ogni cella spiega e mostra i componenti.</li>
                 <li>Licenza: <a href="LICENSE" target="_blank" rel="noopener">GNU GPL v3</a>.</li>
             </ul>
@@ -238,7 +235,7 @@ pip install jupyter</pre>
     </main>
     <footer>
         &copy; 2025 POuL &mdash; Linux Day. Materiale open source. <br>
-        <a href="https://github.com/POuL/LinuxDay2025" target="_blank" rel="noopener">Visita la repository su GitHub</a>
+        <a href="https://github.com/andreac01/GPTux-LD2025" target="_blank" rel="noopener">Visita la repository su GitHub</a>
     </footer>
 </body>
 </html>
